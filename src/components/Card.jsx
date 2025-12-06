@@ -10,7 +10,7 @@ export default function Card({ title, subtitle, date, children, className = "", 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: delay, duration: 0.5 }}
-            className={`bg-industrial-800/80 backdrop-blur-sm border border-industrial-600 p-6 sharp-edge 
+            className={`bg-industrial-800/80 backdrop-blur-sm border border-industrial-600 p-4 md:p-6 sharp-edge 
         hover:border-industrial-200 hover:bg-industrial-800 transition-all duration-300 group flex flex-col h-full relative overflow-hidden ${className}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

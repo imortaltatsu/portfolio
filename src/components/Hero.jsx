@@ -79,10 +79,10 @@ export default function Hero() {
 
                     <ScrambleText
                         text={DATA.profile.name.toUpperCase()}
-                        className="text-5xl md:text-8xl font-black text-industrial-100 mb-4 tracking-tighter mix-blend-difference selection:bg-white selection:text-black cursor-pointer"
+                        className="text-4xl md:text-8xl font-black text-industrial-100 mb-4 tracking-tighter mix-blend-difference selection:bg-white selection:text-black cursor-pointer leading-tight"
                     />
 
-                    <h2 className="text-xl md:text-2xl text-industrial-200 font-mono mb-6 border-l-4 border-industrial-400 pl-4 flex items-center gap-3">
+                    <h2 className="text-lg md:text-2xl text-industrial-200 font-mono mb-6 border-l-4 border-industrial-400 pl-4 flex items-center gap-3">
                         <span className="w-2 h-2 bg-industrial-200 animate-pulse"></span>
                         {DATA.profile.title}
                     </h2>
