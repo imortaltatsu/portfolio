@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imortaltatsu.github.io/portfolio/sitemap.xml
