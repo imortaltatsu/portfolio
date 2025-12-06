@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-industrial-900: #000000;
+  /* Pure Black */
+  --color-industrial-800: #0a0a0a;
+  /* Very Dark Gray */
+  --color-industrial-700: #171717;
+  /* Dark Gray */
+  --color-industrial-600: #262626;
+  /* Panel Borders */
+  --color-industrial-500: #525252;
+  /* Muted Text */
+  --color-industrial-400: #a3a3a3;
+  /* Secondary Text */
+  --color-industrial-300: #d4d4d4;
+  /* Primary Text */
+  --color-industrial-200: #e5e5e5;
+  /* Bright Accent */
+  --color-industrial-100: #ffffff;
+  /* Pure White */
+
+  --font-mono: "Space Mono", monospace;
+  --font-display: "Space Mono", monospace;
+}
+
+:root {
+  background-color: #000000;
+  color: #d4d4d4;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Space Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  /* Sharper text */
+}
+
+@layer utilities {
+  .sharp-edge {
+    border-radius: 0px !important;
+  }
+
+  .dither-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.07'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5e5e5;
+}
