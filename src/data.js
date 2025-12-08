@@ -88,6 +88,7 @@ export const DATA = {
         }
     ],
     awards: [
+        "2nd Prize ($2,500): Agents of AO Hackathon",
         "Winner (₹1,00,000): Smart India Hackathon 2024 (World's Biggest Gov Hackathon)",
         "2nd Prize ($2,000): Arweave Hackerhouse Cohort 3",
         "Winner ($400): Neo X Grind Hackathon - International",
